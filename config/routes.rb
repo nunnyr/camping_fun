@@ -4,8 +4,12 @@ Rails.application.routes.draw do
 
   get '/activities', to: "activities#index", as: "activities"
   get '/activities/:id', to: "activities#show", as: "activity"
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
+  get '/signup', to: "signup#index", as: "signup_form"
+  get "/signup/new", to: "signup#new", as: "new_signup"
+  post "/signup", to: "signup#create"
+  
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
 
 end

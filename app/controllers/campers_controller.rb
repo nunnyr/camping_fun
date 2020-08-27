@@ -5,7 +5,7 @@ class CampersController < ApplicationController
     end
 
     def show
-        @camper = Camper.find_by(params[:id])
+        @camper = Camper.find(params[:id])
         # byebug
     end
 

@@ -1,11 +1,13 @@
 <h1> Activity Sign Up </h1>
 
-<%= form_for @camper do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %> <br/>
-    <%= f.label :age %> 
-    <%= f.text_field :age %> <br/>
-    <%= f.submit "Ready!" %>
+<%= form_for @activity do |f| %>
+    <%= f.label :camper %>
+    <%= f.text_field :camper %> <br/>
+    <%= f.label :activity %> 
+    <%= f.text_field :activity %> <br/>
+    <%= f.label :difficulty %> 
+    <%= f.text_field :difficulty %> <br/>
+    <%= f.submit "Let's Sign Up!" %>
 
 <% end %>
 

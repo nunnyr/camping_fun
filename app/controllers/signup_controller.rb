@@ -4,7 +4,7 @@ class SignupController < ApplicationController
     end
 
     def new
-        @camper = Camper.new
+        @activity = Activity.new
     end
 
     def create

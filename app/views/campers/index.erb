@@ -1,6 +1,9 @@
 <h2>Here are All the Campers</h2>
 <%# byebug %>
 <%# Display a list all of the campers %>
-<% @campers.each do |camper| %>
-<li> <%= camper.name %></li><br>
+<% @campers.map do |camper_var| %>
+    <li> <%= link_to camper_var.name, camper_path(camper_var.id) %></li><br>
 <% end %>
+
+
+

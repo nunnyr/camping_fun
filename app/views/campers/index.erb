@@ -1,4 +1,6 @@
 <h2>Here are All the Campers</h2>
-
+<%# byebug %>
 <%# Display a list all of the campers %>
-
+<% @campers.each do |camper| %>
+<li> <%= camper.name %></li><br>
+<% end %>
